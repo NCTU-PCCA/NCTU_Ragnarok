@@ -5,6 +5,7 @@ This is a demo from Codeforces Gym of [2015 ACM-ICPC Pacific Northwest Regional 
 
 ##[Problem set](Doc/20152016-acmicpc-pacific-northwest-regional-contest-div-1-en.pdf)
 
+##Standing
 ####Finished:
 [Problem C](C-Classy.cpp)
 
@@ -18,7 +19,7 @@ Problem G
 ####Trying:
 Problem K
 
-####Record:
+##Record:
 
-####MySubmission:
+##MySubmission:
 ![Record](Doc/record.png)
