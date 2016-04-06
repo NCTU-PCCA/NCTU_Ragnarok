@@ -21,5 +21,5 @@ Problem K
 
 ##Record:
 
-##MySubmission:
+##Submission:
 ![Record](Doc/record.png)
