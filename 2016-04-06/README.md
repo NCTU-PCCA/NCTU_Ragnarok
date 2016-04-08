@@ -26,7 +26,7 @@ Problem J
 Problem K
 
 ##Record:
-<table><center>
+<table align="center">
   <tr>
     <td>Milestone</td>
     <td>A</td>
@@ -461,7 +461,7 @@ Problem K
     <td></td>
     <td></td>
   </tr>
-</center></table>
+</table>
 
 ##Submission:
 ![Record](Doc/record.png)
