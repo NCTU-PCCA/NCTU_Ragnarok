@@ -26,7 +26,7 @@ Problem J
 Problem K
 
 ##Record:
-<table align="center">
+<table>
   <tr>
     <td>Milestone</td>
     <td>A</td>
@@ -45,9 +45,9 @@ Problem K
     <td>Panalty</td>
     <td></td>
     <td></td>
-    <td>+<br/>01:07</td>
-    <td>+<br/>00:09</td>
-    <td>+<br/>00:14</td>
+    <td>+1:07</td>
+    <td>+0:09</td>
+    <td>+0:14</td>
     <td></td>
     <td>-9</td>
     <td></td>
