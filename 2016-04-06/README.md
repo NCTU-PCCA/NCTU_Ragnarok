@@ -2,8 +2,7 @@
 
 This is a demo from Codeforces Gym of [2015 ACM-ICPC Pacific Northwest Regional Contest (Div. 1)](http://www.codeforces.com/gymRegistration/100820/virtual/true)
 
-
-##[Problem set](Doc/20152016-acmicpc-pacific-northwest-regional-contest-div-1-en.pdf)
+Here is [Problem set](Doc/20152016-acmicpc-pacific-northwest-regional-contest-div-1-en.pdf)
 
 ##Standing
 ####Finished:
@@ -18,11 +17,17 @@ Problem G
 
 ####Trying:
 Problem A
+
 Problem B
+
 Problem F
+
 Problem H
+
 Problem I
+
 Problem J
+
 Problem K
 
 ##Record:
