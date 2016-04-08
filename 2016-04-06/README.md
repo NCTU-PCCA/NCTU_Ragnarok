@@ -43,27 +43,31 @@ Problem K
   </tr>
   <tr>
     <td>Begin Reading</td>
-    <td>C</td>
-    <td>D</td>
-    <td>E</td>
-    <td>F</td>
-    <td>G</td>
-    <td>H</td>
-    <td>I</td>
-    <td>J</td>
-    <td>K</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>End Reading</td>
-    <td>C</td>
-    <td>D</td>
-    <td>E</td>
-    <td>F</td>
-    <td>G</td>
-    <td>H</td>
-    <td>I</td>
-    <td>J</td>
-    <td>K</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>1st Begin</td>
@@ -77,33 +81,35 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>1st End</td>
-    <td>B</td>
-    <td>C</td>
-    <td>D</td>
-    <td>E</td>
-    <td>F</td>
-    <td>G</td>
-    <td>H</td>
-    <td>I</td>
-    <td>J</td>
-    <td>K</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>1st Result</td>
-    <td>A</td>
-    <td>B</td>
-    <td>C</td>
-    <td>D</td>
-    <td>E</td>
-    <td>F</td>
-    <td>G</td>
-    <td>H</td>
-    <td>I</td>
-    <td>J</td>
-    <td>K</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
