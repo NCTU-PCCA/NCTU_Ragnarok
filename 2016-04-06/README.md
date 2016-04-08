@@ -54,8 +54,7 @@ Problem K
     <td>K</td>
   </tr>
   <tr>
-    <td>1st Begin</td>
-    <td>1st End</td>
+    <td>End Reading</td>
     <td>C</td>
     <td>D</td>
     <td>E</td>
@@ -65,6 +64,19 @@ Problem K
     <td>I</td>
     <td>J</td>
     <td>K</td>
+  </tr>
+  <tr>
+    <td>1st Begin</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>1st End</td>
