@@ -26,7 +26,7 @@ Problem J
 Problem K
 
 ##Record:
-<table>
+<table><center>
   <tr>
     <td>Milestone</td>
     <td>A</td>
@@ -133,7 +133,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>01:40</td>
     <td></td>
     <td></td>
     <td></td>
@@ -147,7 +147,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>01:44</td>
     <td></td>
     <td></td>
     <td></td>
@@ -161,7 +161,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -175,7 +175,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>01:45</td>
     <td></td>
     <td></td>
     <td></td>
@@ -189,7 +189,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>01:57</td>
     <td></td>
     <td></td>
     <td></td>
@@ -203,7 +203,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -217,7 +217,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:00</td>
     <td></td>
     <td></td>
     <td></td>
@@ -231,7 +231,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:14</td>
     <td></td>
     <td></td>
     <td></td>
@@ -245,7 +245,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -259,7 +259,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:15</td>
     <td></td>
     <td></td>
     <td></td>
@@ -273,7 +273,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:19</td>
     <td></td>
     <td></td>
     <td></td>
@@ -287,7 +287,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -301,7 +301,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:40</td>
     <td></td>
     <td></td>
     <td></td>
@@ -315,7 +315,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:42</td>
     <td></td>
     <td></td>
     <td></td>
@@ -329,7 +329,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -343,7 +343,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:42</td>
     <td></td>
     <td></td>
     <td></td>
@@ -357,7 +357,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>02:43</td>
     <td></td>
     <td></td>
     <td></td>
@@ -371,7 +371,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -385,7 +385,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>03:42</td>
     <td></td>
     <td></td>
     <td></td>
@@ -399,7 +399,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>03:44</td>
     <td></td>
     <td></td>
     <td></td>
@@ -413,7 +413,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
@@ -427,7 +427,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>04:40</td>
     <td></td>
     <td></td>
     <td></td>
@@ -441,7 +441,7 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>04:44</td>
     <td></td>
     <td></td>
     <td></td>
@@ -455,13 +455,13 @@ Problem K
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
-</table>
+</center></table>
 
 ##Submission:
 ![Record](Doc/record.png)
