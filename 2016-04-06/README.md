@@ -43,41 +43,41 @@ Problem K
   </tr>
   <tr>
     <td>Begin Reading</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>00:00</td>
+    <td>00:00</td>
+    <td>00:14</td>
+    <td>00:00</td>
+    <td>00:10</td>
+    <td>00:16</td>
+    <td>00:23</td>
+    <td>00:24</td>
+    <td>00:35</td>
+    <td>00:31</td>
+    <td>00:40</td>
   </tr>
   <tr>
     <td>End Reading</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>00:10</td>
+    <td>00:20</td>
+    <td>00:19</td>
+    <td>00:05</td>
+    <td>00:11</td>
+    <td>00:23</td>
+    <td>00:30</td>
+    <td>00:32</td>
+    <td>00:38</td>
+    <td>00:50</td>
+    <td>00:52</td>
   </tr>
   <tr>
     <td>1st Begin</td>
     <td></td>
     <td></td>
+    <td>00:20</td>
+    <td>00:05</td>
+    <td>00:11</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>01:15</td>
     <td></td>
     <td></td>
     <td></td>
@@ -87,11 +87,11 @@ Problem K
     <td>1st End</td>
     <td></td>
     <td></td>
+    <td>01:07</td>
+    <td>00:10</td>
+    <td>00:15</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>01:40</td>
     <td></td>
     <td></td>
     <td></td>
@@ -101,11 +101,11 @@ Problem K
     <td>1st Result</td>
     <td></td>
     <td></td>
+    <td>AC</td>
+    <td>AC</td>
+    <td>AC</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>TLE</td>
     <td></td>
     <td></td>
     <td></td>
