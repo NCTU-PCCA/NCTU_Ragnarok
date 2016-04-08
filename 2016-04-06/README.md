@@ -42,6 +42,20 @@ Problem K
     <td>K</td>
   </tr>
   <tr>
+    <td>Panalty</td>
+    <td></td>
+    <td></td>
+    <td>+<br/>01:07</td>
+    <td>+<br/>00:09</td>
+    <td>+<br/>00:14</td>
+    <td></td>
+    <td>-9</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Begin Reading</td>
     <td>00:00</td>
     <td>00:00</td>
