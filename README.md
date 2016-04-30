@@ -9,7 +9,7 @@ This is a cooperate repo of NCTU_Ragnarok for PCCA practice
 ##Exp
 | Contest       | Date          | Rank | A | B | C | D | E | F | G | H | I | J | K | L |
 | ------------- |:-------------:|:----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|[2013 ACM ICPC Southeast USA(http://acm.hust.edu.cn/vjudge/contest/view.action?cid=108058#overview)|2016/03/09||AC -1|AC|||AC -1|
+|[2013 ACM ICPC Southeast USA](http://acm.hust.edu.cn/vjudge/contest/view.action?cid=108058#overview)|2016/03/09||AC -1|AC|||AC -1|
 |[ACM ICPC Asia Tehran 2014](http://acm.hust.edu.cn/vjudge/contest/view.action?cid=108059#rank)|2016/03/23|AC|AC -1|AC -1|AC -3||AC -3|AC -1||AC -6|
 |[2016 ACM-ICPC Pacific Northwest](http://www.codeforces.com/gymRegistration/100820/virtual/true)|2016/04/06|||AC|AC|AC||TLE -9|
 |[PTC-2016-04](http://e-tutor.itsa.org.tw/e-Tutor/course/view.php?id=1351)|2016/04/13||AC -1|AC -2|
