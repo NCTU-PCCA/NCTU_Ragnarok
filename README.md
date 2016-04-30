@@ -10,6 +10,10 @@ This is a cooperate repo of NCTU_Ragnarok for PCCA practice
 | Contest       | Date          | Rank | A | B | C | D | E | F | G | H | I | J | K | L |
 | ------------- |:-------------:|:----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |[ACM ICPC Southeast USA 2013](http://acm.hust.edu.cn/vjudge/contest/view.action?cid=108058#overview)|2016/03/09||AC -1|AC|||AC -1|
+|[ACM ICPC Asia Tehran 2014](http://acm.hust.edu.cn/vjudge/contest/view.action?cid=108059#rank)|2016/03/23|AC|AC -1|AC -1|AC -3||AC -3|AC -1||AC -6|
+|[2015-2016 ACM-ICPC Pacific Northwest Regional Contest](http://www.codeforces.com/gymRegistration/100820/virtual/true)|2016/04/06|||AC|AC|AC||TLE -9|
+|[PTC](http://e-tutor.itsa.org.tw/e-Tutor/course/view.php?id=1351)|2016/04/13||AC -2|AC -3|
+|[NAIPC Practice 2016-02-27](https://open.kattis.com/contests/jmdk25)|2016/04/20|AC -3|AC -3|||WA -4||||||AC -9|AC -2|
 
 - AC : 賽內AC  
 - **AC** : 賽後AC  
