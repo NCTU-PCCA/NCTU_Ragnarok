@@ -4,13 +4,13 @@ This is a practice from [Kattis Problem Archive](https://open.kattis.com/) of [N
 
 ##Standing
 ####Finished:
-[Problem A](code/C-Classy.cpp)
+[Problem A](code/pA.cpp)
 
-[Problem B](code/E-Excellence.cpp)
+[Problem B](code/pB.cpp)
 
-[Problem K](code/D-Triangle.cpp)
+[Problem K](code/pK.cpp)
 
-[Problem L](code/D-Triangle.cpp)
+[Problem L](code/pL.cpp)
 
 ####Haven't finished:
 Problem E
