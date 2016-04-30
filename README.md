@@ -7,8 +7,8 @@ This is a cooperate repo of NCTU_Ragnarok for PCCA practice
 [codebook v1](codebook/codebook_v1.docx)
 
 ##Exp
-| Contest       | Date          | Rank |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| ------------- |:-------------:|:----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Contest       | Date          | Rank | A | B | C | D | E | F | G | H | I | J | K | L |
+| ------------- |:-------------:|:----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 
 - A : 賽內AC  
 - **A** : 賽後AC  
