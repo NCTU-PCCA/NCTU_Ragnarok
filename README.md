@@ -9,10 +9,11 @@ This is a cooperate repo of NCTU_Ragnarok for PCCA practice
 ##Exp
 | Contest       | Date          | Rank | A | B | C | D | E | F | G | H | I | J | K | L |
 | ------------- |:-------------:|:----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|[ACM ICPC Southeast USA 2013](http://acm.hust.edu.cn/vjudge/contest/view.action?cid=108058#overview)|2016/03/09||-1AC|AC|||-1AC|||||
 
-- A : 賽內AC  
-- **A** : 賽後AC  
-- (A) : 精神AC  
+- AC : 賽內AC  
+- **AC** : 賽後AC  
+- (AC) : 精神AC  
 - _ : 慘了了  
 - x : 放棄
 - . : 沒討論 
