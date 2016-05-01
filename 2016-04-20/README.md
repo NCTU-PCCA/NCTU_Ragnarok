@@ -8,16 +8,17 @@ This is a practice from [Kattis Problem Archive](https://open.kattis.com/) of [N
 
 [Problem B](code/pB.cpp)
 
+[Problem C](code/pC.cpp)
+
+[Problem E](code/pE.cpp)
+
 [Problem K](code/pK.cpp)
 
 [Problem L](code/pL.cpp)
 
 ####Haven't finished:
-Problem E
 
 ####Trying:
-Problem C
-
 Problem D
 
 Problem F
