@@ -14,7 +14,7 @@ This is a cooperate repo of NCTU_Ragnarok for PCCA practice
 |[2016 ACM-ICPC Pacific Northwest](http://www.codeforces.com/gymRegistration/100820/virtual/true)|[2016/04/06](2016-04-06)||||AC|AC|AC||TLE|
 |[PTC-2016-04](http://e-tutor.itsa.org.tw/e-Tutor/course/view.php?id=1351)|[2016/04/13](2016-04-13)|||AC|AC|
 |[NAIPC Practice 2016-02-27](https://open.kattis.com/contests/jmdk25)|[2016/04/20](2016-04-20)||AC|AC|**AC**||**AC**||||**AC**|AC|AC|
-|[2015 Damascus Collegiate Programming Contest (DCPC 2015)](http://www.codeforces.com/gymRegistration/100883/virtual/true)|[2016/05/04](2016-05-04)|**AC**|AC|AC|**AC**|AC|AC|AC|AC|AC|AC|
+|[2015 DCPC](http://www.codeforces.com/gymRegistration/100883/virtual/true)|[2016/05/04](2016-05-04)|**AC**|AC|AC|**AC**|AC|AC|AC|AC|AC|AC|
 
 - AC : 賽內AC  
 - **AC** : 賽後AC  
