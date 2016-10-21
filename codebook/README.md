@@ -14,6 +14,7 @@ Data-Structure
 - [ ] Disjoint-Set
 - [ ] Segment-Tree
 - [ ] Treap
+- [ ] mqueue
 
 Geometry
 - [ ] Point
@@ -23,9 +24,12 @@ Graph
 - [ ] SCC
 - [ ] SPFA
 - [ ] Prim
+- [ ] Kruskal
 - [ ] Dijkstra
-- [ ] Bipartite Match
+- [x] Bipartite Match
 - [ ] Manhattan MST
+- [ ] Directed MST
+- [x] LCA
 
 Math
 - [ ] BigInt
@@ -52,11 +56,31 @@ Stringology
 
 #Todo List:
 
-曼哈頓MST
+Kruskal
 
-掃描線
+cut_bridge
 
 More flow
 
 General Match
+
+Min cut
+
+Max clique
+
+splay tree
+
+KD tree
+
+closest_pair
+
+Sweep Line
+
+FFT
+
+chinese remainder theorem
+
+find_root of equation
+
+phi value
 

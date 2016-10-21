@@ -4,6 +4,7 @@
 *.o
 *.obj
 */.DS_Store
+*.dSYM
 
 # Precompiled Headers
 *.gch
