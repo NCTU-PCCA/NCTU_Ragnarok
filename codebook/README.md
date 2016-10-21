@@ -25,6 +25,7 @@ Graph
 - [ ] Prim
 - [ ] Dijkstra
 - [ ] Bipartite Match
+- [ ] Manhattan MST
 
 Math
 - [ ] BigInt
