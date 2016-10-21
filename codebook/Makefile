@@ -1,4 +1,5 @@
 all:
-	rm *.log *.aux *.toc *.pdf
+	rm -f *.log *.aux *.toc *.pdf
 	xelatex codebook.tex
-	rm *.log *.aux *.toc
+	xelatex codebook.tex
+	rm -f *.log *.aux *.toc
