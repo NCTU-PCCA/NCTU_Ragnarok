@@ -60,6 +60,8 @@ Kruskal
 
 cut_bridge
 
+Min cost Max flow
+
 More flow
 
 General Match
