@@ -27,7 +27,7 @@ Graph
 - [ ] Kruskal
 - [ ] Dijkstra
 - [x] Bipartite Match
-- [ ] Manhattan MST
+- [x] Manhattan MST
 - [ ] Directed MST
 - [x] LCA
 
