@@ -11,7 +11,7 @@ Basic
 - [ ] vimrc
 
 Data-Structure
-- [ ] Disjoint-Set
+- [x] Disjoint-Set
 - [ ] Segment-Tree
 - [ ] Treap
 - [ ] mqueue
