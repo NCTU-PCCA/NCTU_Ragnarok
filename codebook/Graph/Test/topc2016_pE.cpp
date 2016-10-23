@@ -4,9 +4,9 @@ const int N = 100100;
 struct Point {
     int x, y, id;
     Point(int _x, int _y, int _id)
-    : x(_x)
-    , y(_y)
-    , id(_id)
+        : x(_x)
+        , y(_y)
+        , id(_id)
     {
     }
     bool operator<(const Point& p) const
@@ -27,9 +27,9 @@ struct Edge {
     int u, v, d;
     Edge() {}
     Edge(int _u, int _v, int _d)
-    : u(_u)
-    , v(_v)
-    , d(_d)
+        : u(_u)
+        , v(_v)
+        , d(_d)
     {
     }
     bool operator<(const Edge& e) const
@@ -85,7 +85,7 @@ int Manhattan_MST(vector<Point>& P)
             for (int i = 0; i < n; i++)
                 P[i].x = -P[i].x;
         }
-        
+
         int T[N], hs[N];
         sort(P.begin(), P.end());
         for (int i = 0; i < n; i++) { //discretize
@@ -120,3 +120,22 @@ int Manhattan_MST(vector<Point>& P)
     return ans;
 }
 
+int main()
+{
+    int T;
+    cin >> T;
+    while (T--) {
+        int n;
+        cin >> n;
+        p.clear();
+        E.clear();
+        for (int i = 0; i < n; i++) {
+            int x, y;
+            cin >> x >> y;
+            p.push_back(Point(x, y, i));
+        }
+        cout << Manhattan_MST(p) * 2 << endl;
+    }
+
+    return 0;
+}

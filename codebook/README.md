@@ -56,11 +56,15 @@ Stringology
 
 #Todo List:
 
+KM algorithm
+
+Fast input
+
 Kruskal
 
 cut_bridge
 
-Min cost Max flow
+Min cost Max flow (SPFA)
 
 More flow
 
