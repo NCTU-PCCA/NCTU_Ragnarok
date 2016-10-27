@@ -23,10 +23,11 @@ Graph
 - [ ] BCC
 - [ ] SCC
 - [ ] SPFA
-- [ ] Prim
 - [ ] Kruskal
 - [ ] Dijkstra
 - [x] Bipartite Match
+- [ ] MST-Prim
+- [ ] MST-Kruskal
 - [x] Manhattan MST
 - [ ] Directed MST
 - [x] LCA
