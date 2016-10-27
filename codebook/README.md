@@ -59,8 +59,6 @@ Stringology
 
 KM algorithm
 
-Fast input
-
 cut_bridge
 
 Min cost Max flow (SPFA)
