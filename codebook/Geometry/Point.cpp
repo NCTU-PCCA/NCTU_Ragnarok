@@ -55,21 +55,16 @@ double length(Vector v)
 {
     return sqrt(v.x * v.x + v.y * v.y); //return sqrt(dot(v,v));
 }
-double angle(const Vector& a, const Vector& b){return acos(dot(a, b) / length(a) / length(b));}
-double Triarea(const Point& p1, const Point& p2, const Point& p3){
-return fabs(cross(p2 - p1, p3 - p1)) / 2;
+double angle(const Vector& a, const Vector& b) { return acos(dot(a, b) / length(a) / length(b)); }
+double Triarea(const Point& p1, const Point& p2, const Point& p3)
+{
+    return fabs(cross(p2 - p1, p3 - p1)) / 2;
 }
 Vector Rotate(const Vector& a, double rad) //radian 0~2pi //counterclockwise{
-    return Vector(a.x * cos(rad) - a.y * sin(rad), a.x * sin(rad) + a.y * cos(rad)); //旋轉矩陣
+    return Vector(a.x * cos(rad) - a.y * sin(rad), a.x* sin(rad) + a.y * cos(rad)); //旋轉矩陣
 }
-Vector Normal(const Vector& a){  //向量的單位法線
-
-
-
-
-
-
-
+Vector Normal(const Vector& a)
+{ //向量的單位法線
 
     double L = length(a);
     return Vector(-a.y / L, a.x / L);
