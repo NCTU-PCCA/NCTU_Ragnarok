@@ -31,6 +31,7 @@ Graph
 - [x] Manhattan MST
 - [ ] Directed MST
 - [x] LCA
+- [ ] flow
 
 Math
 - [ ] BigInt
