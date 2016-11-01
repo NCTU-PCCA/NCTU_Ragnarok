@@ -29,9 +29,9 @@ void radixsort(int data[], int n) //基數排序
     int i, j, k;
     int radix = 1;
     for(i = 1; i <= d; i++) { //進行d次排序
-        for(j = 0; j < 10; j++) count[j] = 0; //每次分配前清空计數器
+        for(j = 0; j < 10; j++) count[j] = 0; //每次分配前清空計數器
         for(j = 0; j < n; j++){
-            k = (data[j] / radix) % 10; //統计每個桶中的記錄數
+            k = (data[j] / radix) % 10; //統計每個桶中的記錄數
             count[k]++;
         }
         for(j = 1; j < 10; j++) count[j] = count[j - 1] + count[j]; //將tmp中的位置依次分配给每個桶
@@ -40,7 +40,7 @@ void radixsort(int data[], int n) //基數排序
             tmp[count[k] - 1] = data[j];
             count[k]--;
         }
-        for(j = 0; j < n; j++) //將臨時數组的内容複製到data中
+        for(j = 0; j < n; j++) //將臨時數組的内容複製到data中
             data[j] = tmp[j];
         radix = radix * 10;
     }
