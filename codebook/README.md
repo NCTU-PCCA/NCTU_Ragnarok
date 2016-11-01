@@ -34,6 +34,7 @@ Graph
 - [ ] Directed MST
 - [x] LCA
 - [ ] flow
+- [x] flow_mincost
 
 Math
 - [ ] BigInt
@@ -63,8 +64,6 @@ Stringology
 KM algorithm
 
 cut_bridge
-
-Min cost Max flow (SPFA)
 
 More flow
 
