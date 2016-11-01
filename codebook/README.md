@@ -4,6 +4,8 @@
 
 ### 誰寫的模板自己檢查
 
+### **加個時間複雜度喔**
+
 ### 記得去 [ShareLaTex](https://www.sharelatex.com/project) Update Code
 
 Basic
