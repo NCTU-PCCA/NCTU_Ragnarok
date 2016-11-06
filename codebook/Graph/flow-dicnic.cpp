@@ -2,6 +2,7 @@
 using namespace std;
 int id; // zero-based
 int p[10000]; // 每個點連到的最後一條邊的編號
+int work[10000];
 int S, T; // S:源點 T:匯點
 int n; // 點數
 vector<string> ans;
@@ -46,7 +47,7 @@ int DFS(int x, int low)
 {
     if (x == T)
         return low;
-    for (int i = p[x]; i != -1; i = e[i].next) {
+    for (int &i = work[x]; i != -1; i = e[i].next) { //從上次的開始
         int v = e[i].v;
         if (dis[v] > 0 && dis[v] == dis[x] + 1 && e[i].cap) //只能從深度為x連到x+1 &&還有空間
         {
@@ -65,7 +66,8 @@ int dicnic()
     int flow = 0;
     while (BFS(S, T)) { //持續建立分層圖
         int mind;
-        while (mind = DFS(S, INT_MAX))
+        for(int i=0;i<=T;i++) work[i]=p[i];
+        while ((mind = DFS(S, INT_MAX)))
             flow += mind; //持續擴充
     }
     return flow;
