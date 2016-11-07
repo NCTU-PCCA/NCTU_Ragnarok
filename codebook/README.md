@@ -33,8 +33,9 @@ Graph
 - [x] Manhattan MST
 - [ ] Directed MST
 - [x] LCA
-- [ ] flow
+- [x] flow_dinic
 - [x] flow_mincost
+- [ ] heavylight-decomposition
 
 Math
 - [ ] BigInt
@@ -60,6 +61,8 @@ Stringology
 - [ ] Z
 
 #Todo List:
+
+the kth number in interval
 
 KM algorithm
 
