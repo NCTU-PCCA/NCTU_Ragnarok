@@ -20,7 +20,7 @@ Data-Structure
 
 Geometry
 - [ ] Point
-- [ ] Minimum-Cover-Circle
+- [x] Minimum-Cover-Circle
 
 Graph
 - [ ] BCC
