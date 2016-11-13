@@ -2,9 +2,7 @@ struct Node{
     int value;
     Node *lc,*rc;
     Node(){value = 0;lc = rc = NULL;}
-    void pull(){
-        value = lc->value+rc->value;
-    }
+    void pull(){ value = lc->value+rc->value; }
 };
 int v[N];
 Node* build(int L,int R){
