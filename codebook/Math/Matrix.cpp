@@ -1,8 +1,7 @@
-#include <bits/stdc++.h>
-using namespace std;
 const double EPS = 1e-9;
+
 template <typename T>
-class Matrix {
+class Matrix{
 public:
     Matrix()
         : wrong(false)
