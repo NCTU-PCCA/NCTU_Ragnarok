@@ -1,4 +1,5 @@
-nclude<bits / stdc++.h> using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 struct Node {
     int point; //點
     int dis; // 距離源點的距離
