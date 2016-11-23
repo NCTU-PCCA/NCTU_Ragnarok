@@ -12,4 +12,7 @@ http://codeforces.com/gym/101128/
 
 http://vjudge.net/contest/141746
 
-http://codeforces.com/gym/100818/  2016-11-22
+http://codeforces.com/gym/100818/  2016-11-19
+
+http://codeforces.com/gym/100800/ 2016-11-23
+
