@@ -65,11 +65,7 @@ Stringology
 
 the kth number in interval
 
-KM algorithm
-
 cut_bridge
-
-More flow
 
 General Match
 
@@ -81,15 +77,10 @@ splay tree
 
 KD tree
 
-closest_pair
-
 Sweep Line
-
-FFT
 
 chinese remainder theorem
 
 find_root of equation
 
-phi value
 
