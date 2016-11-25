@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+const double EPS =1e-6;
 int dcmp(double x)
 {
     if (fabs(x) < EPS)
@@ -29,6 +32,9 @@ struct Point {
     {
         return Point(x / p, y / p);
     }
+    double operator ^ (const Point & b) const {
+        return x*b.y-y*b.x;
+    }
     bool operator<(const Point& b)
     {
         return x < b.x || (x == b.x && y < b.y);
@@ -55,12 +61,15 @@ double length(Vector v)
 {
     return sqrt(v.x * v.x + v.y * v.y); //return sqrt(dot(v,v));
 }
+double length(Point a ,Point b){
+    return length(a-b);
+}
 double angle(const Vector& a, const Vector& b) { return acos(dot(a, b) / length(a) / length(b)); }
 double Triarea(const Point& p1, const Point& p2, const Point& p3)
 {
     return fabs(cross(p2 - p1, p3 - p1)) / 2;
 }
-Vector Rotate(const Vector& a, double rad) //radian 0~2pi //counterclockwise{
+Vector Rotate(const Vector& a, double rad){ //radian 0~2pi //counterclockwise{
     return Vector(a.x * cos(rad) - a.y * sin(rad), a.x* sin(rad) + a.y * cos(rad)); //旋轉矩陣
 }
 Vector Normal(const Vector& a)
