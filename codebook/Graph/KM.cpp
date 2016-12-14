@@ -8,6 +8,7 @@ bool vsx[MAXN], vsy[MAXN];
 
 bool find(int x)
 {
+    if(vsx[x]) return false;
     vsx[x] = 1;
     for (int i = 0; i < n; i++) {
         if (vsy[i])
@@ -22,7 +23,7 @@ bool find(int x)
         } else
             slack[i] = min(slack[i], t);
     }
-    return 0;
+    return false;
 }
 int km(bool MIN = false) //二分圖最大匹配
 {
