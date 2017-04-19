@@ -1,7 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
 const double EPS = 1e-9;
 
 template <typename T>
-class Matrix{
+class Matrix {
 public:
     Matrix()
         : wrong(false)
@@ -44,7 +46,7 @@ public:
     {
         delete data;
     }
-    T at(int a, int b)
+    T& at(int a, int b)
     {
         return data[a][b];
     }
@@ -121,6 +123,27 @@ public:
                 tmp.data[j][i] = data[i][j];
         return tmp;
     }
+    void Identity()
+    { // rows==cols
+        for (int i = 0; i < rows; i++) {
+            at(i, i) = 1;
+        }
+    }
+    Matrix pow(int rhs) const
+    {
+        if (rows != cols)
+            return Matrix();
+        Matrix res(rows, rows), p(*this);
+        res.Identity();
+        while (rhs) {
+            if (rhs & 1)
+                res = res * p;
+            p = p * p;
+            rhs >>= 1;
+        }
+        return res;
+    }
+    // r:non-free number l:l[i] is true if i-th variable is non-free
     Matrix GuassElimination(int& r, vector<bool>& l, int flag = 0)
     {
         l = vector<bool>(cols);
@@ -146,6 +169,31 @@ public:
             }
             r++;
             l[i] = true;
+        }
+        return res;
+    }
+    vector<double> Solve(vector<double> a)
+    {
+        if (rows != cols)
+            return vector<double>();
+        vector<double> res(rows);
+        Matrix t(rows, cols + 1);
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++)
+                t.at(i, j) = at(i, j);
+            t.at(i, rows) = a[i];
+        }
+        int r = 0;
+        vector<bool> l;
+        t = t.GuassElimination(r, l, 1);
+        if (r != rows)
+            return vector<double>();
+        for (int i = 0; i < cols; i++) {
+            if (l[i])
+                for (int j = 0; j < rows; j++) {
+                    if (fabs(t.at(j, i)) > EPS)
+                        res[i] = t.at(j, cols) / t.at(j, i);
+                }
         }
         return res;
     }
@@ -179,7 +227,6 @@ public:
                 res.at(i, j) = t.at(i, j + cols);
         return res;
     }
-
 
     T** data;
     int rows, cols;
