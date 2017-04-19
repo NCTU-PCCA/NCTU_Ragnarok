@@ -257,3 +257,24 @@ public:
     int rows, cols;
     bool wrong;
 };
+
+int main()
+{
+    int n;
+    while (cin >> n) {
+        if (!n) {
+            cout << '*' << endl;
+            return 0;
+        }
+        Matrix<int> matrix(n, n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int a;
+                cin >> a;
+                matrix.at(i, j) = a;
+            }
+        }
+        cout << matrix.det() << endl;
+    }
+    return 0;
+}
