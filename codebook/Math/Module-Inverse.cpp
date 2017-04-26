@@ -7,9 +7,6 @@ int inverse(int A,int M,int X = 1,int Y = 0){
   return inverse(M,A%M,Y,X);
 }
 
-int inverse(int A,int M){
-    return A == 1?1:inverse(M%A)*(M-M/A)%M;
-}
 
 inline int inverse(int A,int M){
     return ExPower(A,M-2,M);
