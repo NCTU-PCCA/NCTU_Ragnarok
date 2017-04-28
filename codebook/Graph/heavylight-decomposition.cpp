@@ -36,6 +36,9 @@ int repos(int x ,int fa,int tp){
 void update_seg(Node* root,int l,int r ,int ql,int qr ,int v){
     ;
 }
+void query_seg(Node* root,int l,int r ,int ql,int qr){
+    ;
+}
 void update(int x, int y,int v)
 {
     while(top[x]!=top[y]){
@@ -44,4 +47,15 @@ void update(int x, int y,int v)
         x=pre[top[x]];
     }
     update_seg(root,1,MAXN,min(pos[x],pos[y]),max(pos[x],pos[y]),v);
+}
+//query from x to y
+void query(int x ,int y){
+    int ans;
+    while(top[x]!=top[y]){
+        if(dep[x]<dep[y]) swap(x,y);
+        ans+=query_seg(root,1,MAXN,pos[top[x]],pos[x]);
+        x=pre[top[x]];
+    }
+    ans+=query_seg(root,1,MAXN,min(pos[x],pos[y]),max(pos[x],pos[y]));
+
 }
