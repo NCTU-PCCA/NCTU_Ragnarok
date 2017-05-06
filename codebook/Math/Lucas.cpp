@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int p = 5; //prime
+const int p = 5; //prime<10^5
 int fac[p + 1];
 void build_fac(int p)
 {

@@ -1,8 +1,14 @@
 struct Node{
-    int value;
+    int value,lazy;
     Node *lc,*rc;
-    Node(){value = 0;lc = rc = NULL;}
+    Node(){value = 0;lc = rc = NULL; lazy=0}
     void pull(){ value = lc->value+rc->value; }
+    void push(){
+        if(lc) lc->lazy=lazy;
+        if(rc)rc->lazy=lazy;
+        //value may should be update need [L,R];
+        lazy=0;
+    }
 };
 int v[N];
 Node* build(int L,int R){

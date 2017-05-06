@@ -3,6 +3,7 @@
 import java.util.*;
 import java.lang.*;
 import java.math.*;
+import java.io.*;
 
 class Main {
 	public static void main (String[] args) {
@@ -10,7 +11,7 @@ class Main {
 		System.out.print(2);
 		System.out.println("Hello World");
 		System.out.printf("%.2f", 0.12345);
-		
+
 		Scanner	sc = new Scanner(System.in);
 		System.out.println(sc.nextLine()); //gets()
 		System.out.println(sc.next()); //scanf("%s")
@@ -60,7 +61,34 @@ class Main {
 		System.out.println(Math.PI);
 		System.out.println(Math.sin(1));
 	}
+	static class InputReader {
+		public BufferedReader reader;
+		public StringTokenizer tokenizer;
 
+		public InputReader(InputStream stream) {
+			reader = new BufferedReader(new InputStreamReader(stream), 32768);
+			tokenizer = null;
+		}
+
+		public String next() {
+			while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+				try {
+					tokenizer = new StringTokenizer(reader.readLine());
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+				}
+			}
+			return tokenizer.nextToken();
+		}
+
+		public int nextInt() {
+			return Integer.parseInt(next());
+		}
+		public double nextDouble(){
+			return Double.parseDouble( next() );
+		}
+
+	}
 	static class MyCom implements Comparator<Integer> {
 		public int compare(Integer i1, Integer i2) {
 			return i2 - i1;
