@@ -4,7 +4,7 @@ void DFS(int u)
 {
     visit[u] = low[u] = ++t; //進行標號
     s.push(u); instack[u] = true;
-    for (int i = 0; i < e[i].size(); i++) {
+    for (int i = 0; i < e[u].size(); i++) {
         int v = e[u][i];
         if (!visit[v]) {
             DFS(v); low[u] = min(low[u], low[v]); // 找 u 的最上層祖先
