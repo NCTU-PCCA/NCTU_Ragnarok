@@ -1,31 +1,38 @@
-#include <bits/stdc++.h>
+// a0919610611/fuyu0425/twleo
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+
 using namespace std;
-//don't use __gcd for negative number
+#define int long long
 int gcd(int a, int b)
 {
     if (a < 0)
         return gcd(-a, b);
     return b ? gcd(b, a % b) : a;
 }
-//super fast
 int ExMultiply(int a, int b, int n)
 {
-    if (a == 0)
-        return 0;
-    return ((a & 1) * b % n + (ExMultiply(a >> 1, b, n) << 1) % n) % n;
-}
-int FastPow(int a, int b, int n)
-{
     a %= n;
-    int ans = 1;
-    int d = a;
+    b %= n;
+    int r = 0;
     while (b) {
         if (b & 1)
-            ans = ExMultiply(ans, d, n);
-        d = ExMultiply(d, d, n);
+            r = ((a + r >= n) ? a + r - n : a + r);
+        a = ((a + a >= n) ? a + a - n : a + a);
         b >>= 1;
     }
-    return ans;
+    return r;
+}
+
+int ExExPower(int a, int d, int n)
+{
+    if (d == 0)
+        return 1;
+    int k = ExExPower(a, d / 2, n);
+    if (d % 2)
+        return ExMultiply(ExMultiply(k, k, n), a, n);
+    return ExMultiply(k, k, n);
 }
 
 bool MillerRabin(int n, int a)
@@ -44,7 +51,7 @@ bool MillerRabin(int n, int a)
         r++;
     }
     // a^d = ? (mod n)
-    int remain = FastPow(a, d, n);
+    int remain = ExExPower(a, d, n);
     if (remain == 1 || remain == n - 1)
         return true;
     while (r--) {
@@ -54,45 +61,64 @@ bool MillerRabin(int n, int a)
     }
     return false;
 }
+
 bool IsPrime(int n)
 {
     if (n == 2)
         return true;
     if (!(n & 1))
         return false;
-    int a[7] = { 2, 325, 9375, 28178, 450775, 9780504, 1795265022 };
-    for (int i = 0; i < 7; i++) {
+    int a[5] = { 2, 3, 7, 61, 24251 };
+    for (int i = 0; i < 5; i++)
         if (!MillerRabin(n, a[i]))
             return false;
-    }
     return true;
 }
 int PollardRho(int n, int c)
 {
-    int x = rand() % n, y = x, k = 2;
+    int x = rand() % n, y = 2, k = 2;
     for (int i = 2;; i++) {
-        x = (ExMultiply(x, x, n) + c) % n;
+        x = (x * x + c) % n;
         int d = gcd(x - y, n);
         if (d != 1 && d != n)
             return d;
-        if (y == x)
-            return n;
+		if(x==y)return n;
         if (i == k) {
             y = x;
             k <<= 1;
         }
     }
 }
-vector<int> Fac;
+int ans;
 void fac(int n)
 {
     if (IsPrime(n)) {
-        Fac.push_back(n);
+        ans = min(ans, n);
         return;
     }
     int p = n;
     while (p >= n)
         p = PollardRho(p, rand() % (n - 1) + 1);
-    fac(p);
     fac(n / p);
+    fac(p);
+}
+#undef int
+int main()
+{
+#define int long long
+    int N;
+    int T;
+    cin >> T;
+    while (T--) {
+        cin >> N;
+        if (IsPrime(N)) {
+            cout << "Prime" << endl;
+        } else {
+            ans = 1e18;
+            fac(N);
+            cout << ans << endl;
+        }
+    }
+
+    return 0;
 }

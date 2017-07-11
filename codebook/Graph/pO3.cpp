@@ -1,6 +1,11 @@
-#include <bits/stdc++.h>
+// a0919610611/fuyu0425/twleo
+#include <algorithm>
+#include <cmath>
+#include <cstdio>
+#include <iostream>
 using namespace std;
-//don't use __gcd for negative number
+#define int long long
+//important
 int gcd(int a, int b)
 {
     if (a < 0)
@@ -83,11 +88,11 @@ int PollardRho(int n, int c)
         }
     }
 }
-vector<int> Fac;
+int ans;
 void fac(int n)
 {
     if (IsPrime(n)) {
-        Fac.push_back(n);
+        ans = min(ans, n);
         return;
     }
     int p = n;
@@ -95,4 +100,24 @@ void fac(int n)
         p = PollardRho(p, rand() % (n - 1) + 1);
     fac(p);
     fac(n / p);
+}
+#undef int
+int main()
+{
+#define int long long
+    int T;
+    cin >> T;
+    while (T--) {
+        int N;
+        cin >> N;
+        if (IsPrime(N)) {
+            puts("Prime");
+        } else {
+            ans = 1e18;
+            fac(N);
+            cout << ans << endl;
+        }
+    }
+
+    return 0;
 }
