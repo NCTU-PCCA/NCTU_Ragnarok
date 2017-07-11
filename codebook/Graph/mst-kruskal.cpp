@@ -13,6 +13,7 @@ struct Edge{
 vector<Edge> E;
 int ds[N];
 void Init (int n){
+    E.clear();
     for(int i=0;i<n;i++) ds[i]=i;
 }
 int Find(int x){
