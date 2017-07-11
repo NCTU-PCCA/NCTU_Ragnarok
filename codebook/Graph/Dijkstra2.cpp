@@ -26,7 +26,7 @@ vector<Edge> e[10000];
 void init(int n) // initialize
 {
     for (int i = 0; i < n; i++) {
-        dis[n] = 1e9;
+        dis[i] = 1e9;
         e[i].clear();
     }
 }
