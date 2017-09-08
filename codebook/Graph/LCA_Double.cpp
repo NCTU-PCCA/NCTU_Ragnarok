@@ -1,3 +1,6 @@
+/*
+ 多個點的LCA = >  DFS走訪順序中min 和 max 的LCA 
+ */
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 1000;
