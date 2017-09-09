@@ -24,19 +24,19 @@ Geometry
 
 Graph
 - [ ] BCC
-- [ ] SCC
+- [x] SCC
 - [ ] SPFA
 - [ ] Kruskal
-- [ ] Dijkstra
+- [x] Dijkstra
 - [x] Bipartite Match
 - [ ] MST-Prim
-- [ ] MST-Kruskal
+- [x] MST-Kruskal
 - [x] Manhattan MST
 - [ ] Directed MST
 - [x] LCA
 - [x] flow_dinic
 - [x] flow_mincost
-- [ ] heavylight-decomposition
+- [x] heavylight-decomposition
 
 Math
 - [ ] BigInt
@@ -61,26 +61,23 @@ Stringology
 - [ ] Trie
 - [ ] Z
 
-#Todo List:
+# Todo List:
 
-the kth number in interval
+- 卡題思路
 
-cut_bridge
 
-General Match
 
-Min cut
-
-Max clique
-
-splay tree
-
-KD tree
-
-Sweep Line
-
-chinese remainder theorem
-
-find_root of equation
+- the kth number in interval
+- cut_bridge
+- General Match
+- Min cut
+- Max clique
+- splay tree
+- KD tree
+- Sweep Line
+- chinese remainder theorem
+- find_root of equation
+- gcc builtin function cheet sheet
+- python cheet sheet
 
 
