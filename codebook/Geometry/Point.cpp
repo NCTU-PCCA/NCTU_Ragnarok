@@ -1,6 +1,6 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-const double EPS =1e-6;
+const double EPS = 1e-6;
 int dcmp(double x)
 {
     if (fabs(x) < EPS)
@@ -32,8 +32,9 @@ struct Point {
     {
         return Point(x / p, y / p);
     }
-    double operator ^ (const Point & b) const {
-        return x*b.y-y*b.x;
+    double operator^(const Point& b) const
+    {
+        return x * b.y - y * b.x;
     }
     bool operator<(const Point& b)
     {
@@ -61,16 +62,18 @@ double length(Vector v)
 {
     return sqrt(v.x * v.x + v.y * v.y); //return sqrt(dot(v,v));
 }
-double length(Point a ,Point b){
-    return length(a-b);
+double length(Point a, Point b)
+{
+    return length(a - b);
 }
 double angle(const Vector& a, const Vector& b) { return acos(dot(a, b) / length(a) / length(b)); }
 double Triarea(const Point& p1, const Point& p2, const Point& p3)
 {
     return fabs(cross(p2 - p1, p3 - p1)) / 2;
 }
-Vector Rotate(const Vector& a, double rad){ //radian 0~2pi //counterclockwise{
-    return Vector(a.x * cos(rad) - a.y * sin(rad), a.x* sin(rad) + a.y * cos(rad)); //旋轉矩陣
+Vector Rotate(const Vector& a, double rad)
+{ //radian 0~2pi //counterclockwise{
+    return Vector(a.x * cos(rad) - a.y * sin(rad), a.x * sin(rad) + a.y * cos(rad)); //旋轉矩陣
 }
 Vector Normal(const Vector& a)
 { //向量的單位法線
@@ -164,12 +167,13 @@ double ldistance(Line& l1, Line& l2) //線段到線段距離
         return 0;
     return distance(l1.p1, l2); //點到線段距離
 }
-int ConvexHull(vector<Point>& P, Point* res)
-{ //凸包Andrew's Monotone Chain
-    sort(P.begin(), P.end()); //先x 後 y
-    auto last = unique(P.begin(), P.end()); //非重複的點數量
+void ConvexHull(vector<Point>& P, vector<Point>& res)
+{
+    sort(P.begin(), P.end());
+    auto last = unique(P.begin(), P.end());
     P.erase(last, P.end());
     int cnt = P.size();
+    res.resize(cnt);
     int m = 0;
     for (int i = 0; i < cnt; i++) {
         while (m > 1 && cross(res[m - 1] - res[m - 2], P[i] - res[m - 2]) <= 0)
@@ -182,9 +186,9 @@ int ConvexHull(vector<Point>& P, Point* res)
             m--;
         res[m++] = P[i];
     }
-    if (cnt > 1) //頭尾 1個點不用--
+    if (cnt > 1)
         m--;
-    return m; //凸包點數
+    res.resize(m);
 }
 double PolygonArea(Point* p, int n)
 {
@@ -210,3 +214,4 @@ Polygon halfplane_intersection(Polygon& p, Line& line)
     }
     return q;
 }
+
