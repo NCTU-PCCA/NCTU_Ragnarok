@@ -97,34 +97,33 @@ Point GetLineProjection(Point p, Point a, Point b)
     return a + v * (dot(v, p - a) / dot(v, v));
 }
 typedef Line Segment;
-bool Onsegment(Point p, Point a1, Point a2) //點在線上
-{
-    //平行                      //端點在兩側
-    return dcmp(cross(a1 - p, a2 - p)) == 0 && dcmp(dot(a1 - p, a2 - p)) < 0;
-}
 bool SegmentProperIntersection(Point a1, Point a2, Point b1, Point b2)
 {
-    // 規範相交 :交點不能是線段的交點
-    double c1 = cross(a2 - a1, b1 - a1), c2 = cross(a2 - a1, b2 - a1);
-    double c3 = cross(b2 - b1, a1 - b1), c4 = cross(b2 - b1, a2 - b1);
+    int c1 = cross(b1 - a1, b2 - a1), c2 = cross(b1 - a2, b2 - a2);
+    int c3 = cross(a1 - b1, a2 - b1), c4 = cross(a1 - b2, a2 - b2);
     return dcmp(c1) * dcmp(c2) < 0 && dcmp(c3) * dcmp(c4) < 0;
 }
 bool SegmentProperIntersection(Segment s1, Segment s2)
 {
     return SegmentProperIntersection(s1.p1, s1.p2, s2.p1, s2.p2);
 }
-bool SegmentInterSection(Point a1, Point a2, Point b1, Point b2) //非規範相交
+bool Onsegment(Point p, Point a1, Point a2)
 {
-    //端點相交
+    return dcmp(cross(p - a2, a1 - a2)) == 0 && dcmp(dot(a1 - p, a2 - p)) <= 0;
+}
+bool SegmentIntersection(Point a1, Point a2, Point b1, Point b2)
+{
+    if (cross(a2 - a1, b2 - b1) == 0)
+        return false;
     if (Onsegment(a1, b1, b2) || Onsegment(a2, b1, b2) || Onsegment(b1, a1, a2) || Onsegment(b2, a1, a2))
         return true;
     if (SegmentProperIntersection(a1, a2, b1, b2))
-        return true; //規範相交
+        return true;
     return false;
 }
-bool SegmentInterSection(Line& l1, Line& l2)
+bool SegmentIntersection(Line& l1, Line& l2)
 {
-    return SegmentInterSection(l1.p1, l1.p2, l2.p1, l2.p2);
+    return SegmentIntersection(l1.p1, l1.p2, l2.p1, l2.p2);
 }
 double distance(Point& a, Point& b)
 {
@@ -150,7 +149,7 @@ double distance(Point& p, Segment& s) //Point to Segment
 }
 double distance(Segment& s1, Segment& s2) //線段到線段
 {
-    if (SegmentInterSection(s1, s2))
+    if (SegmentIntersection(s1, s2))
         return 0;
     double d = 1e9;
     d = min(d, distance(s1.p1, s2)); //點到線段距離取最短
