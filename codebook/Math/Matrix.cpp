@@ -14,18 +14,18 @@ public:
     {
         rows = _rows;
         cols = _cols;
-        data = new T*[rows];
-        for (int i = 0; i < rows; i++)
-            data[i] = new T[cols];
+        data.resize(_rows);
+        for (int i = 0; i < _rows; i++)
+            data[i].resize(_cols);
     }
     Matrix(T** _data, int _rows, int _cols)
         : wrong(false)
     {
         rows = _rows;
         cols = _cols;
-        data = new T*[rows];
-        for (int i = 0; i < rows; i++)
-            data[i] = new T[cols];
+        data.resize(_rows);
+        for (int i = 0; i < _rows; i++)
+            data[i].resize(_cols);
         for (int i = 0; i < rows; i++)
             for (int j = 0; j < cols; j++)
                 data[i][j] = _data[i][j];
@@ -35,16 +35,12 @@ public:
         wrong = N.wrong;
         rows = N.rows;
         cols = N.cols;
-        data = new T*[rows];
+        data.resize(rows);
         for (int i = 0; i < rows; i++)
-            data[i] = new T[cols];
+            data[i].resize(cols);
         for (int i = 0; i < rows; i++)
             for (int j = 0; j < cols; j++)
                 data[i][j] = N.data[i][j];
-    }
-    ~Matrix()
-    {
-        delete data;
     }
     T& at(int a, int b)
     {
@@ -114,7 +110,6 @@ public:
         Matrix tmp = Matrix(*this);
         //int fuck = tmp.rows; tmp.rows = tmp.cols;tmp.cols = fuck;
         swap(tmp.rows, tmp.cols);
-        delete tmp.data;
         tmp.data = new T*[tmp.rows];
         for (int i = 0; i < tmp.rows; i++)
             tmp.data[i] = new T[tmp.cols];
@@ -253,7 +248,7 @@ public:
         return res;
     }
 
-    T** data;
+    vector<vector<T> > data;
     int rows, cols;
     bool wrong;
 };
