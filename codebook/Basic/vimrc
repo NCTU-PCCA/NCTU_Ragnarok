@@ -1,4 +1,5 @@
-set nocompatible              
+set nocompatible
+set ai ar sm rnu
 set t_Co=256
 set nu
 set ai
@@ -8,3 +9,5 @@ set softtabstop=4
 colorscheme torte
 syntax on
 filetype plugin indent on
+se makeprg=g++\ %\ -Wall\ -Wshadow\ -std=c++14\ -o\ %<.out
+map <F9> :make <CR>:!./%<.out<CR>
