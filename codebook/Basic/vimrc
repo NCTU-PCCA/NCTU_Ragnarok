@@ -6,8 +6,9 @@ set ai
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-colorscheme torte
+colorscheme darkblue
 syntax on
 filetype plugin indent on
 se makeprg=g++\ %\ -Wall\ -Wshadow\ -std=c++14\ -o\ %<.out
-map <F9> :make <CR>:!./%<.out<CR>
+map <F9> :w <CR> :make <CR>:!./%<.out<CR>
+map <F10> :w <CR> :make <CR>:!./%<.out < %<.in<CR>
