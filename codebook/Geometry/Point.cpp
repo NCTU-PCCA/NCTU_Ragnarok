@@ -129,9 +129,9 @@ double distance(Point& a, Point& b)
 {
     return sqrt(length(b - a));
 }
-double distance(Point& p, Point& p1, Point& p2) //Line => p1,p2
+double distance(Point& p, Line &L) //Line => p1,p2
 {
-    Vector v1 = p - p1, v2 = p2 - p1;
+    Vector v1 = p - L.p1, v2 = L.p2 - L.p1;
     return fabs(cross(v1, v2)) / length(v2); //面積/底=高(距離)
 }
 double distance(Point& p, Segment& s) //Point to Segment
@@ -169,26 +169,42 @@ double ldistance(Line& l1, Line& l2) //線段到線段距離
 void ConvexHull(vector<Point>& P, vector<Point>& res)
 {
     sort(P.begin(), P.end());
-    auto last = unique(P.begin(), P.end());
-    P.erase(last, P.end());
     int cnt = P.size();
-    res.resize(cnt);
+    res.resize(cnt+1);
     int m = 0;
     for (int i = 0; i < cnt; i++) {
         while (m > 1 && cross(res[m - 1] - res[m - 2], P[i] - res[m - 2]) <= 0)
             m--;
-        res[m++] = P[i];
+        res.at(m) = P[i];
+        m++;
     }
     int k = m;
     for (int i = cnt - 2; i >= 0; i--) {
         while (m > k && cross(res[m - 1] - res[m - 2], P[i] - res[m - 2]) <= 0)
             m--;
-        res[m++] = P[i];
+        res.at(m) = P[i];
+        m++;
     }
     if (cnt > 1)
         m--;
     res.resize(m);
 }
+double ConvexHullWidth(vector<Point>& p)
+{
+    double ans = 1e18;
+    int num = p.size();
+    for (int i = 0, j = 0; i < num; i++) {
+        Line s;
+        s.p1 = p[i];
+        s.p2 = p[(i + 1) % num];
+        while (distance(p[(j + 1) % num], s) >= distance(p[j], s))
+            j = (j + 1) % num;
+        ans = min(ans, distance(p[j], s));
+    }
+    return ans;
+}
+
+
 double PolygonArea(Point* p, int n)
 {
     double area = 0;
@@ -213,4 +229,3 @@ Polygon halfplane_intersection(Polygon& p, Line& line)
     }
     return q;
 }
-
