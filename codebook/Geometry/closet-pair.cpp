@@ -4,7 +4,7 @@ vector<Point> p;
 double DnC(int L, int R, vector<Point>& p) // 區間
 {
     if (L >= R)
-        return 1e-9;
+        return 1e9;
     if (L + 1 == R) {
         return length(p[L], p[R]);
     }
@@ -13,7 +13,7 @@ double DnC(int L, int R, vector<Point>& p) // 區間
     if (dcmp(d) == 0)
         return 0;
     int N = 0;
-    Point t[10000];
+    Point t[10000+10];
     for (int i = M; i >= L && p[M].x - p[i].x < d; --i) {
         t[N++] = p[i];
     }
@@ -22,7 +22,7 @@ double DnC(int L, int R, vector<Point>& p) // 區間
     }
     sort(t, t + N, cmpy);
     for (int i = 0; i < N; i++) {
-        for (int j = 1; j <= 3; j++) {
+        for (int j = 1; j <= 3 && i+j< N ; j++) {
             d = min(d, length(t[i], t[i + j]));
         }
     }
@@ -31,5 +31,5 @@ double DnC(int L, int R, vector<Point>& p) // 區間
 double closet_pair(vector<Point>& p)
 {
     sort(p.begin(),p.end());
-    return DnC(0,p.size(),p);
+    return DnC(0,p.size()-1,p);
 }
