@@ -39,11 +39,26 @@ std::vector<E> lis(const std::vector<E>& n)
     std::reverse(result.begin(), result.end());
     return result;
 }
+// 嚴格遞增
 int LIS(vector<int>& v)
 {
     vector<int> ans;
     for (auto& i : v) {
         auto it = lower_bound(ans.begin(), ans.end(), i);
+        if (ans.size() == 0 || i > ans.back())
+            ans.push_back(i);
+        else {
+            *it = i;
+        }
+    }
+    return ans.size();
+}
+
+// 非嚴格遞增
+int LIS(vector<int> &v) {
+    vector<int> ans;
+    for (auto& i : v) {
+        auto it = upper_bound(ans.begin(), ans.end(), i);
         if (ans.size() == 0 || i >= ans.back())
             ans.push_back(i);
         else {
